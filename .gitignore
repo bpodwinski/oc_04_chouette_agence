@@ -1,4 +1,5 @@
 *.xlsx
+*.log
 node_modules/*
 !node_modules/@fortawesome/
 node_modules/@fortawesome/*
