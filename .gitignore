@@ -1,3 +1,4 @@
 *.xlsx
 *.log
+assets/css/*
 node_modules/*
