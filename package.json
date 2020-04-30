@@ -4,7 +4,8 @@
   "description": "Vous travaillez pour La chouette agence, une grande agence de web design basée à Lyon. L’activité de l’entreprise a bien démarré mais aujourd’hui, elle est en perte de vitesse. Eh oui, la concurrence est rude. La fondatrice de l’entreprise, Sophie, cherche une solution pour faire repartir l’activité. En tapant “Entreprise web design Lyon” sur Internet, elle s’aperçoit que le site de l’agence apparaît seulement en 2e page des moteurs de recherche. Par chance, un de vos collègues, Martin, lui a dit que vous étiez un spécialiste en référencement.",
   "main": "index.js",
   "scripts": {
-    "watch": "webpack --watch"
+    "build": "NODE_ENV=production webpack --progress --colors --debug --display-chunks",
+    "watch": "webpack --progress --colors --debug --display-chunks --watch"
   },
   "repository": {
     "type": "git",
@@ -21,6 +22,9 @@
     "file-loader": "^6.0.0",
     "mini-css-extract-plugin": "^0.9.0",
     "node-sass": "^4.14.0",
+    "path": "^0.12.7",
+    "postcss-loader": "^3.0.0",
+    "resolve-url-loader": "^3.1.1",
     "sass-loader": "^8.0.2",
     "style-loader": "^1.2.1",
     "url-loader": "^4.1.0",
@@ -29,6 +33,7 @@
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.13.0",
+    "autoprefixer": "^9.7.6",
     "bootstrap": "^4.4.1"
   }
 }
