@@ -91,9 +91,9 @@
   !*** ./assets/scss/main.scss ***!
   \*******************************/
 /*! no static exports found */
-/***/ (function(module, exports, __webpack_require__) {
+/***/ (function(module, exports) {
 
-eval("// extracted by mini-css-extract-plugin\n\n//# sourceURL=webpack:///./assets/scss/main.scss?");
+eval("throw new Error(\"Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\\nModuleBuildError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\\nSassError: File to import not found or unreadable: /var/www/OC-developpeur-web/04_optimiser_site_web/node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss.\\n        on line 4 of /var/www/OC-developpeur-web/04_optimiser_site_web/assets/scss/main.scss\\n>> @import \\\"~@fortawesome/fontawesome-free/scss/fontawesome\\\";\\n\\n   ^\\n\\n    at runLoaders (/var/www/OC-developpeur-web/04_optimiser_site_web/node_modules/webpack/lib/NormalModule.js:316:20)\\n    at /var/www/OC-developpeur-web/04_optimiser_site_web/node_modules/loader-runner/lib/LoaderRunner.js:367:11\\n    at /var/www/OC-developpeur-web/04_optimiser_site_web/node_modules/loader-runner/lib/LoaderRunner.js:233:18\\n    at context.callback (/var/www/OC-developpeur-web/04_optimiser_site_web/node_modules/loader-runner/lib/LoaderRunner.js:111:13)\\n    at Object.render [as callback] (/var/www/OC-developpeur-web/04_optimiser_site_web/node_modules/sass-loader/dist/index.js:73:7)\\n    at Object.done [as callback] (/var/www/OC-developpeur-web/04_optimiser_site_web/node_modules/neo-async/async.js:8067:18)\\n    at options.error (/var/www/OC-developpeur-web/04_optimiser_site_web/node_modules/node-sass/lib/index.js:294:32)\");\n\n//# sourceURL=webpack:///./assets/scss/main.scss?");
 
 /***/ }),
 
