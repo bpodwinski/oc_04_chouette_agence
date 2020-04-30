@@ -11,18 +11,18 @@ if (process.env.NODE_ENV === 'production') {
  
 module.exports = {
   mode: "development",
-  devtool: 'source-map',
+  devtool: "source-map",
   entry: {
-    main: ["./assets/scss/main.scss"],
+    main: ["./assets/js/app.js", "./assets/scss/main.scss"],
   },
   output: {
     path: path.resolve(__dirname, "./"),
-    filename: "webpack.log",
+    filename: "assets/js/main.js",
   },
   plugins: [
     new MiniCssExtractPlugin({
-      filename: "./assets/css/[name].css",
-      chunkFilename: "./assets/css/[id].css",
+      filename: "assets/css/[name].css",
+      chunkFilename: "assets/css/[id].css",
     }),
   ],
   module: {
