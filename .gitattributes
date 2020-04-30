@@ -1,0 +1,5 @@
+.gitattributes export-ignore
+.gitignore export-ignore
+.htaccess export-ignore
+package-lock.json export-ignore
+assets/scss/ export-ignore
