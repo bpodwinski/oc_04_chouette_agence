@@ -11,6 +11,7 @@ if (process.env.NODE_ENV === 'production') {
  
 module.exports = {
   mode: "development",
+  devtool: 'source-map',
   entry: {
     main: ["./assets/scss/main.scss"],
   },
