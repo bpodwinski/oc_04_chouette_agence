@@ -15753,9 +15753,6 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
-/* @import "partials/fonts";
-@import "partials/mixins";
-@import "partials/keyframes"; */
 .block-title {
   margin: 2rem 0 0;
 }
@@ -16397,25 +16394,6 @@ a[data-lightbox]:hover img {
   background: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-label,
-.btn,
-a {
-  font-family: "helvetica";
-  font-weight: 400;
-  color: #575757 !important;
-}
-
-.container {
-  max-width: 1000px;
-}
-
 .hero-bloc-text {
   font-size: 38px;
 }
@@ -16439,11 +16417,6 @@ a {
   margin: auto auto auto auto;
 }
 
-.h1 {
-  font-size: 20px;
-  font-family: "Open Sans";
-}
-
 .cta-hero {
   margin-top: 22px;
   color: #FFFFFF !important;
@@ -16451,11 +16424,6 @@ a {
   padding: 12px 28px 12px 28px;
   font-size: 16px;
   font-weight: 700;
-}
-
-.social {
-  max-width: 400px;
-  margin: auto auto auto auto;
 }
 
 h2 {
@@ -16796,6 +16764,50 @@ h4 {
   margin: 0 auto 3rem;
   font-size: 1rem;
   text-align: justify;
+}
+
+.footer {
+  background: radial-gradient(ellipse 100% 100% at 0% 100%, #3c4898 0%, #bb5f5f 100%);
+  color: rgba(255, 255, 255, 0.9);
+  padding: 4rem 0;
+}
+
+.footer h5 {
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.footer a {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.footer a:hover {
+  color: #fff;
+}
+
+.footer p {
+  text-align: justify;
+}
+
+.footer .footer-content .logo,
+.footer .footer-content .about,
+.footer .footer-content .partners,
+.footer .footer-content .social {
+  margin-bottom: 3rem;
+}
+
+.footer .footer-content .social a {
+  margin: 0 .2rem;
+}
+
+.footer .footer-content .social a:hover {
+  color: #bb5f5f;
+}
+
+.footer .footer-bottom {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 

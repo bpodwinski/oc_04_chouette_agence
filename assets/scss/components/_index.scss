@@ -639,25 +639,6 @@ a[data-lightbox]:hover img {
     background: none;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-label,
-.btn,
-a {
-    font-family: "helvetica";
-    font-weight: 400;
-    color: #575757!important;
-}
-
-.container {
-    max-width: 1000px;
-}
-
 .hero-bloc-text {
     font-size: 38px;
 }
@@ -680,12 +661,6 @@ a {
     max-width: 600px;
     margin: auto auto auto auto;
 }
-
-.h1 {
-    font-size: 20px;
-    font-family: "Open Sans";
-}
-
 .cta-hero {
     margin-top: 22px;
     color: #FFFFFF!important;
@@ -693,11 +668,6 @@ a {
     padding: 12px 28px 12px 28px;
     font-size: 16px;
     font-weight: 700;
-}
-
-.social {
-    max-width: 400px;
-    margin: auto auto auto auto;
 }
 
 h2 {
