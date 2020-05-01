@@ -10,6 +10,14 @@
 @import "partials/mixins";
 @import "partials/keyframes"; */
 
+    .block-title {
+        margin: 2rem 0 0;
+
+        p {
+            margin: 0 0 2rem;
+        }
+    }
+
 @import "components/index";
 @import "components/header";
 @import "components/nav";

@@ -15756,6 +15756,14 @@ readers do not read off random characters that represent icons */
 /* @import "partials/fonts";
 @import "partials/mixins";
 @import "partials/keyframes"; */
+.block-title {
+  margin: 2rem 0 0;
+}
+
+.block-title p {
+  margin: 0 0 2rem;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -16424,10 +16432,6 @@ a {
   font-weight: lighter;
   max-width: 520px;
   margin: auto auto auto auto;
-}
-
-p {
-  font-size: 11px;
 }
 
 .tight-width-whitespace {
