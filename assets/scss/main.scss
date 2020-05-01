@@ -6,20 +6,13 @@
 @import "~@fortawesome/fontawesome-free/scss/solid";
 @import "~@fortawesome/fontawesome-free/scss/regular";
 
-.block-title {
-    margin: 2rem 0 0;
-
-    p {
-        margin: 0 0 2rem;
-    }
-}
-
 @import "partials/mixins";
 
 @import "components/index";
 @import "components/header";
 @import "components/nav";
-@import "components/portfolio";
+@import "components/slide";
 @import "components/whatido";
+@import "components/portfolio";
 @import "components/cta";
 @import "components/footer";

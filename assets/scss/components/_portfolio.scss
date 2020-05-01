@@ -1,9 +1,54 @@
+.fade {
+    backdrop-filter: blur(15px);
+}
+
 #portfolio {
+    padding: 5rem 0;
+
+    background: radial-gradient(ellipse 180% 120% at 90% 30%, $secondary 10%, $primary 80%);
+
+    .block-title {
+        margin: 2rem 0 0;
+
+        p {
+            margin: 0 0 3rem;
+        }
+    }
+
+    h3,
+    p,
+    figcaption,
+    .modal-title,
+    .close {
+        color: #fff !important;
+        text-shadow: 0 3px 1px rgba($color: #000000, $alpha: .2);
+    }
+
+    .img-thumbnail {
+        padding: 0.25rem;
+        background-color: rgba($color: #000000, $alpha: 0.1);
+        border: 1px solid rgba($color: #fff, $alpha: 0.3);
+        border-radius: 5rem;
+    }
+
+    .modal-title {
+        text-transform: uppercase;
+    }
+
+    .modal-content {
+        background: radial-gradient(ellipse 180% 130% at 30% 30%, $secondary 10%, $primary 80%);
+
+        .modal-header,
+        .modal-footer {
+            border: 0;
+        }
+    }
 
     #modal {
         display: block;
         width: 320px;
         margin: 0 auto 1rem;
+
     }
 
     figcaption {

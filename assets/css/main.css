@@ -15753,14 +15753,6 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
-.block-title {
-  margin: 2rem 0 0;
-}
-
-.block-title p {
-  margin: 0 0 2rem;
-}
-
 body {
   margin: 0;
   padding: 0;
@@ -16753,17 +16745,45 @@ h4 {
   }
 }
 
-#portfolio #modal {
-  display: block;
-  width: 320px;
-  margin: 0 auto 1rem;
+.slide {
+  position: relative;
+  position: relative;
+  background: url(../img/la-chouette-agence-banniere.jpg) 50% 50% no-repeat fixed;
+  background-size: cover;
+  color: #fff !important;
 }
 
-#portfolio figcaption {
-  width: 320px;
-  margin: 0 auto 3rem;
-  font-size: 1rem;
-  text-align: justify;
+.slide:before {
+  content: "";
+  background: url(../img/pattern.png);
+  background-size: 80px 80px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: .25;
+  pointer-events: none;
+}
+
+.slide .col-12 {
+  padding: 10rem 0;
+}
+
+.slide .col-12 h1,
+.slide .col-12 p {
+  z-index: 1;
+  color: #fff !important;
+  text-shadow: 0 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+.slide .col-12 p {
+  font-size: 1.25rem;
+}
+
+.slide .col-12 h1 {
+  margin-bottom: 2rem;
+  text-transform: uppercase;
 }
 
 .whatido {
@@ -16804,6 +16824,66 @@ h4 {
 .whatido .col-12 h2 {
   margin-bottom: 2rem;
   text-transform: uppercase;
+}
+
+.fade {
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+}
+
+#portfolio {
+  padding: 5rem 0;
+  background: radial-gradient(ellipse 180% 120% at 90% 30%, #3c4898 10%, #bb5f5f 80%);
+}
+
+#portfolio .block-title {
+  margin: 2rem 0 0;
+}
+
+#portfolio .block-title p {
+  margin: 0 0 3rem;
+}
+
+#portfolio h3,
+#portfolio p,
+#portfolio figcaption,
+#portfolio .modal-title,
+#portfolio .close {
+  color: #fff !important;
+  text-shadow: 0 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+#portfolio .img-thumbnail {
+  padding: 0.25rem;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5rem;
+}
+
+#portfolio .modal-title {
+  text-transform: uppercase;
+}
+
+#portfolio .modal-content {
+  background: radial-gradient(ellipse 180% 130% at 30% 30%, #3c4898 10%, #bb5f5f 80%);
+}
+
+#portfolio .modal-content .modal-header,
+#portfolio .modal-content .modal-footer {
+  border: 0;
+}
+
+#portfolio #modal {
+  display: block;
+  width: 320px;
+  margin: 0 auto 1rem;
+}
+
+#portfolio figcaption {
+  width: 320px;
+  margin: 0 auto 3rem;
+  font-size: 1rem;
+  text-align: justify;
 }
 
 .cta {
