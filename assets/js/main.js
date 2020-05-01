@@ -104,9 +104,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-jquery__WEBPACK_IMPORTED_MODULE_0___default()("#myModal").on("shown.bs.modal", function () {
-  jquery__WEBPACK_IMPORTED_MODULE_0___default()("#myInput").trigger("focus");
-});
 
 /***/ }),
 
