@@ -1,7 +1,7 @@
-.cta {
+.whatido {
     @include pattern;
     position: relative;
-    background: url(../img/la-chouette-agence-banniere.jpg) 50% 50% no-repeat fixed;
+    background: url(../img/image-de-presentation.jpg) 50% 50% no-repeat fixed;
     background-size: cover;
     color: #fff;
 
@@ -9,10 +9,13 @@
         padding: 10rem 0;
 
         h2,
-        span {
+        p {
             z-index: 1;
-            font-size: 2rem;
             text-shadow: 0 3px 1px rgba($color: #000000, $alpha: .2);
+        }
+
+        p {
+            font-size: 1.25rem;
         }
         
         h2 {

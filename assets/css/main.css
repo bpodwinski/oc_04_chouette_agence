@@ -16766,6 +16766,46 @@ h4 {
   text-align: justify;
 }
 
+.whatido {
+  position: relative;
+  position: relative;
+  background: url(../img/image-de-presentation.jpg) 50% 50% no-repeat fixed;
+  background-size: cover;
+  color: #fff;
+}
+
+.whatido:before {
+  content: "";
+  background: url(../img/pattern.png);
+  background-size: 80px 80px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: .25;
+  pointer-events: none;
+}
+
+.whatido .col-12 {
+  padding: 10rem 0;
+}
+
+.whatido .col-12 h2,
+.whatido .col-12 p {
+  z-index: 1;
+  text-shadow: 0 3px 1px rgba(0, 0, 0, 0.2);
+}
+
+.whatido .col-12 p {
+  font-size: 1.25rem;
+}
+
+.whatido .col-12 h2 {
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
 .cta {
   position: relative;
   position: relative;
@@ -16799,8 +16839,8 @@ h4 {
 }
 
 .cta .col-12 h2 {
-  font-size: 3rem;
   margin-bottom: 2rem;
+  text-transform: uppercase;
 }
 
 .footer {
