@@ -16489,15 +16489,6 @@ h4 {
   color: #FFFFFF !important;
 }
 
-.portfolio-thumb {
-  margin-bottom: 24px;
-}
-
-.portfolio-row {
-  margin-bottom: 44px;
-  margin-top: 50px;
-}
-
 .avatar {
   box-shadow: 0px 4px 9px rgba(0, 0, 0, 0.3);
 }
@@ -16788,6 +16779,19 @@ h4 {
   .bloc-mob-center-text {
     text-align: center;
   }
+}
+
+#portfolio #modal {
+  display: block;
+  width: 320px;
+  margin: 0 auto 1rem;
+}
+
+#portfolio figcaption {
+  width: 320px;
+  margin: 0 auto 3rem;
+  font-size: 1rem;
+  text-align: justify;
 }
 
 
