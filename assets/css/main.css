@@ -15753,6 +15753,16 @@ readers do not read off random characters that represent icons */
   font-weight: 400;
 }
 
+::-moz-selection {
+  background-color: #3c4898;
+  color: #e9caca;
+}
+
+::selection {
+  background-color: #3c4898;
+  color: #e9caca;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -16745,6 +16755,14 @@ h4 {
   }
 }
 
+.navbar {
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 5px 50px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.9);
+  -webkit-backdrop-filter: blur(8px);
+          backdrop-filter: blur(8px);
+}
+
 .slide {
   position: relative;
   position: relative;
@@ -16836,12 +16854,17 @@ h4 {
   background: radial-gradient(ellipse 180% 120% at 90% 30%, #3c4898 10%, #bb5f5f 80%);
 }
 
+#portfolio .container {
+  max-width: 1680px;
+}
+
 #portfolio .block-title {
   margin: 2rem 0 0;
 }
 
 #portfolio .block-title p {
   margin: 0 0 3rem;
+  font-size: 1.25rem;
 }
 
 #portfolio h3,
@@ -16851,13 +16874,6 @@ h4 {
 #portfolio .close {
   color: #fff !important;
   text-shadow: 0 3px 1px rgba(0, 0, 0, 0.2);
-}
-
-#portfolio .img-thumbnail {
-  padding: 0.25rem;
-  background-color: rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-  border-radius: 5rem;
 }
 
 #portfolio .modal-title {
@@ -16875,12 +16891,38 @@ h4 {
 
 #portfolio #modal {
   display: block;
-  width: 320px;
+  overflow: hidden;
+  max-width: 320px;
   margin: 0 auto 1rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+}
+
+#portfolio #modal .img-thumbnail {
+  padding: 0.25rem;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 0;
+  transform: scale(1);
+  transition: all .2s ease;
+}
+
+#portfolio #modal:hover {
+  box-shadow: 0 5px 50px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
+#portfolio #modal:hover .img-thumbnail {
+  transform: scale(1.05);
+}
+
+#portfolio figure {
+  display: block;
 }
 
 #portfolio figcaption {
-  width: 320px;
+  max-width: 320px;
   margin: 0 auto 3rem;
   font-size: 1rem;
   text-align: justify;
