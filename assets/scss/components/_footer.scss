@@ -1,5 +1,5 @@
 .footer {
-    background: radial-gradient(ellipse 100% 100% at 0% 100%, $secondaryColor 0%, $primaryColor 100%);
+    background: radial-gradient(ellipse 100% 100% at 0% 100%, $secondary 0%, $primary 100%);
     color: rgba($color: #fff, $alpha: 0.9);
     padding: 4rem 0;
 
@@ -35,7 +35,7 @@
             margin: 0 .2rem;
 
             &:hover {
-                color: $primaryColor;
+                color: $primary;
             }
         }
     }

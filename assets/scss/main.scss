@@ -14,8 +14,11 @@
     }
 }
 
+@import "partials/mixins";
+
 @import "components/index";
 @import "components/header";
 @import "components/nav";
 @import "components/portfolio";
+@import "components/cta";
 @import "components/footer";
