@@ -1,14 +1,15 @@
-const webpack = require('webpack');
-const path = require('path');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const webpack = require("webpack");
+const path = require("path");
+const MiniCssExtractPlugin = require("mini-css-extract-plugin");
+const TerserPlugin = require("terser-webpack-plugin");
 let sourceMap = true;
 let outputStyle = "expanded";
 
-if (process.env.NODE_ENV === 'production') {
+if (process.env.NODE_ENV === "production") {
   sourceMap = false;
   outputStyle = "compressed";
 }
- 
+
 module.exports = {
   mode: "development",
   devtool: "source-map",
@@ -18,6 +19,10 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, "./"),
     filename: "assets/js/main.js",
+  },
+  optimization: {
+    minimize: true,
+    minimizer: [new TerserPlugin()],
   },
   plugins: [
     new MiniCssExtractPlugin({
