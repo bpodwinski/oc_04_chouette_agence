@@ -1,4 +1,7 @@
 ::selection {
-    background-color: $secondary;
-    color: lighten($primary, 30%);
+  background-color: $secondary;
+  color: lighten($primary, 30%);
+}
+
+@media (max-width: 767px) {
 }

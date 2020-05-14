@@ -1,46 +1,53 @@
 .footer {
-    background: radial-gradient(ellipse 100% 100% at 0% 100%, $secondary 0%, $primary 100%);
+  background: radial-gradient(
+    ellipse 100% 100% at 0% 100%,
+    $secondary 0%,
+    $primary 100%
+  );
+  color: rgba($color: #fff, $alpha: 0.9);
+  padding: 4rem 0;
+
+  h5 {
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+  }
+
+  a {
     color: rgba($color: #fff, $alpha: 0.9);
-    padding: 4rem 0;
 
-    h5 {
-        color: #fff;
-        font-weight: bold;
-        text-transform: uppercase;
-        margin-bottom: 1rem;
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  p {
+    text-align: justify;
+  }
+
+  .footer-content {
+    .logo,
+    .about,
+    .partners,
+    .social {
+      margin-bottom: 3rem;
     }
 
-    a {
-        color: rgba($color: #fff, $alpha: 0.9);
+    .social a {
+      margin: 0 0.2rem;
 
-        &:hover {
-            color: #fff;
-        }
+      i {
+        font-size: 2rem;
+      }
+
+      &:hover {
+        color: $primary;
+      }
     }
+  }
 
-    p {
-        text-align: justify;
-    }
-
-    .footer-content {
-
-        .logo,
-        .about,
-        .partners,
-        .social {
-            margin-bottom: 3rem;
-        }
-
-        .social a {
-            margin: 0 .2rem;
-
-            &:hover {
-                color: $primary;
-            }
-        }
-    }
-
-    .footer-bottom {
-        color: rgba($color: #fff, $alpha: 0.8);
-    }
+  .footer-bottom {
+    color: rgba($color: #fff, $alpha: 0.8);
+  }
 }
