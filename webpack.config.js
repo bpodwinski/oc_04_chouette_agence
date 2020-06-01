@@ -13,9 +13,6 @@ if (process.env.NODE_ENV === "production") {
 module.exports = {
   mode: "development",
   devtool: "source-map",
-  externals: {
-    $: "$",
-  },
   entry: {
     main: [
       "./assets/js/app.js",
@@ -40,6 +37,8 @@ module.exports = {
     new webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery",
+      "window.jQuery": "jquery",
+      Popper: ["popper.js", "default"],
     }),
   ],
   module: {

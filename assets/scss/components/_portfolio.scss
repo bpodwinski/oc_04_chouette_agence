@@ -4,10 +4,24 @@
 
   .container {
     max-width: 600px;
+
+    a {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  h3 {
+    font-size: 1.25rem;
   }
 
   .block-title {
     margin: 2rem 0 0;
+
+    h2 {
+      text-transform: uppercase;
+      margin-bottom: 2rem;
+    }
 
     p {
       margin: 0 0 3rem;
