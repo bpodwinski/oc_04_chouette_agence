@@ -5,6 +5,20 @@
   */
 
 /*!
+ * @fileOverview TouchSwipe - jQuery Plugin
+ * @version 1.6.18
+ *
+ * @author Matt Bryson http://www.github.com/mattbryson
+ * @see https://github.com/mattbryson/TouchSwipe-Jquery-Plugin
+ * @see http://labs.rampinteractive.co.uk/touchSwipe/
+ * @see http://plugins.jquery.com/project/touchSwipe
+ * @license
+ * Copyright (c) 2010-2015 Matt Bryson
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ *
+ */
+
+/*!
  * Sizzle CSS Selector Engine v2.3.5
  * https://sizzlejs.com/
  *
@@ -29,191 +43,21 @@
  * Date: 2020-04-10T15:07Z
  */
 
-/*! ../dom-utils/contains.js */
-
-/*! ../dom-utils/getBoundingClientRect.js */
-
-/*! ../dom-utils/getClippingRect.js */
-
-/*! ../dom-utils/getComputedStyle.js */
-
-/*! ../dom-utils/getDocumentElement.js */
-
-/*! ../dom-utils/getLayoutRect.js */
-
-/*! ../dom-utils/getNodeName.js */
-
-/*! ../dom-utils/getOffsetParent.js */
-
-/*! ../dom-utils/getWindow.js */
-
-/*! ../dom-utils/instanceOf.js */
-
-/*! ../enums.js */
-
-/*! ../utils/computeAutoPlacement.js */
-
-/*! ../utils/computeOffsets.js */
-
-/*! ../utils/detectOverflow.js */
-
-/*! ../utils/expandToHashMap.js */
-
-/*! ../utils/getAltAxis.js */
-
-/*! ../utils/getBasePlacement.js */
-
-/*! ../utils/getFreshSideObject.js */
-
-/*! ../utils/getMainAxisFromPlacement.js */
-
-/*! ../utils/getOppositePlacement.js */
-
-/*! ../utils/getOppositeVariationPlacement.js */
-
-/*! ../utils/getVariation.js */
-
-/*! ../utils/mergePaddingObject.js */
-
-/*! ../utils/rectToClientRect.js */
-
-/*! ../utils/within.js */
+/*! !webpack amd options */
 
 /*! ./../../../webpack/buildin/global.js */
 
 /*! ./assets/js/app.js */
 
+/*! ./assets/js/blocs.js */
+
+/*! ./assets/js/jquery.touchSwipe.js */
+
 /*! ./assets/scss/main.scss */
-
-/*! ./computeOffsets.js */
-
-/*! ./contains.js */
-
-/*! ./detectOverflow.js */
-
-/*! ./dom-utils/getCompositeRect.js */
-
-/*! ./dom-utils/getComputedStyle.js */
-
-/*! ./dom-utils/getLayoutRect.js */
-
-/*! ./dom-utils/getOffsetParent.js */
-
-/*! ./dom-utils/instanceOf.js */
-
-/*! ./dom-utils/listScrollParents.js */
-
-/*! ./enums.js */
-
-/*! ./expandToHashMap.js */
-
-/*! ./format.js */
-
-/*! ./getBasePlacement.js */
-
-/*! ./getBorders.js */
-
-/*! ./getBoundingClientRect.js */
-
-/*! ./getCompositeRect.js */
-
-/*! ./getComputedStyle.js */
-
-/*! ./getDecorations.js */
-
-/*! ./getDocumentElement.js */
-
-/*! ./getDocumentRect.js */
-
-/*! ./getFreshSideObject.js */
-
-/*! ./getHTMLElementScroll.js */
-
-/*! ./getMainAxisFromPlacement.js */
-
-/*! ./getNodeName.js */
-
-/*! ./getNodeScroll.js */
-
-/*! ./getOffsetParent.js */
-
-/*! ./getParentNode.js */
-
-/*! ./getScrollParent.js */
-
-/*! ./getVariation.js */
-
-/*! ./getViewportRect.js */
-
-/*! ./getWindow.js */
-
-/*! ./getWindowScroll.js */
-
-/*! ./getWindowScrollBarX.js */
-
-/*! ./index.js */
-
-/*! ./instanceOf.js */
-
-/*! ./isScrollParent.js */
-
-/*! ./isTableElement.js */
-
-/*! ./listScrollParents.js */
-
-/*! ./mergePaddingObject.js */
-
-/*! ./modifiers/applyStyles.js */
-
-/*! ./modifiers/arrow.js */
-
-/*! ./modifiers/computeStyles.js */
-
-/*! ./modifiers/eventListeners.js */
-
-/*! ./modifiers/flip.js */
-
-/*! ./modifiers/hide.js */
-
-/*! ./modifiers/offset.js */
-
-/*! ./modifiers/popperOffsets.js */
-
-/*! ./modifiers/preventOverflow.js */
-
-/*! ./rectToClientRect.js */
-
-/*! ./utils/debounce.js */
-
-/*! ./utils/detectOverflow.js */
-
-/*! ./utils/getBasePlacement.js */
-
-/*! ./utils/mergeByName.js */
-
-/*! ./utils/orderModifiers.js */
-
-/*! ./utils/uniqueBy.js */
-
-/*! ./utils/validateModifiers.js */
-
-/*! @popperjs/core */
 
 /*! bootstrap */
 
-/*! exports provided: createPopper, popperGenerator, defaultModifiers, detectOverflow */
-
 /*! exports provided: default */
-
-/*! exports provided: distanceAndSkiddingToXY, default */
-
-/*! exports provided: isElement, isHTMLElement */
-
-/*! exports provided: mapToStyles, default */
-
-/*! exports provided: top, bottom, right, left, auto, basePlacements, start, end, clippingParents, viewport, popper, reference, variationPlacements, placements, beforeRead, read, afterRead, beforeMain, main, afterMain, beforeWrite, write, afterWrite, modifierPhases */
-
-/*! exports provided: top, bottom, right, left, auto, basePlacements, start, end, clippingParents, viewport, popper, reference, variationPlacements, placements, beforeRead, read, afterRead, beforeMain, main, afterMain, beforeWrite, write, afterWrite, modifierPhases, popperGenerator, createPopper */
 
 /*! jquery */
 
@@ -227,6 +71,10 @@
   !*** ./assets/js/app.js ***!
   \**************************/
 
+/*!****************************!*\
+  !*** ./assets/js/blocs.js ***!
+  \****************************/
+
 /*!*******************************!*\
   !*** ./assets/scss/main.scss ***!
   \*******************************/
@@ -235,21 +83,17 @@
   !*** (webpack)/buildin/global.js ***!
   \***********************************/
 
+/*!****************************************!*\
+  !*** (webpack)/buildin/amd-options.js ***!
+  \****************************************/
+
+/*!****************************************!*\
+  !*** ./assets/js/jquery.touchSwipe.js ***!
+  \****************************************/
+
 /*!********************************************!*\
   !*** ./node_modules/jquery/dist/jquery.js ***!
   \********************************************/
-
-/*!**************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/enums.js ***!
-  \**************************************************/
-
-/*!**************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/index.js ***!
-  \**************************************************/
-
-/*!***************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/popper.js ***!
-  \***************************************************/
 
 /*!***************************************************!*\
   !*** ./node_modules/popper.js/dist/esm/popper.js ***!
@@ -259,221 +103,9 @@
   !*** ./node_modules/bootstrap/dist/js/bootstrap.js ***!
   \*****************************************************/
 
-/*!********************************************************!*\
-  !*** multi ./assets/js/app.js ./assets/scss/main.scss ***!
-  \********************************************************/
-
-/*!*********************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/format.js ***!
-  \*********************************************************/
-
-/*!*********************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/within.js ***!
-  \*********************************************************/
-
-/*!***********************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/modifiers/flip.js ***!
-  \***********************************************************/
-
-/*!***********************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/modifiers/hide.js ***!
-  \***********************************************************/
-
-/*!***********************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/debounce.js ***!
-  \***********************************************************/
-
-/*!***********************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/uniqueBy.js ***!
-  \***********************************************************/
-
-/*!************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/modifiers/arrow.js ***!
-  \************************************************************/
-
-/*!*************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/modifiers/offset.js ***!
-  \*************************************************************/
-
-/*!*************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/getAltAxis.js ***!
-  \*************************************************************/
-
-/*!**************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/mergeByName.js ***!
-  \**************************************************************/
-
-/*!***************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/contains.js ***!
-  \***************************************************************/
-
-/*!***************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/getVariation.js ***!
-  \***************************************************************/
-
-/*!****************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/getWindow.js ***!
-  \****************************************************************/
-
-/*!*****************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/getBorders.js ***!
-  \*****************************************************************/
-
-/*!*****************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/instanceOf.js ***!
-  \*****************************************************************/
-
-/*!*****************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/computeOffsets.js ***!
-  \*****************************************************************/
-
-/*!*****************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/detectOverflow.js ***!
-  \*****************************************************************/
-
-/*!*****************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/orderModifiers.js ***!
-  \*****************************************************************/
-
-/*!******************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/getNodeName.js ***!
-  \******************************************************************/
-
-/*!******************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/modifiers/applyStyles.js ***!
-  \******************************************************************/
-
-/*!******************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/expandToHashMap.js ***!
-  \******************************************************************/
-
-/*!*******************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/getBasePlacement.js ***!
-  \*******************************************************************/
-
-/*!*******************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/rectToClientRect.js ***!
-  \*******************************************************************/
-
-/*!********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/getLayoutRect.js ***!
-  \********************************************************************/
-
-/*!********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/getNodeScroll.js ***!
-  \********************************************************************/
-
-/*!********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/getParentNode.js ***!
-  \********************************************************************/
-
-/*!********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/modifiers/computeStyles.js ***!
-  \********************************************************************/
-
-/*!********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/modifiers/popperOffsets.js ***!
-  \********************************************************************/
-
-/*!********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/validateModifiers.js ***!
-  \********************************************************************/
-
-/*!*********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/getDecorations.js ***!
-  \*********************************************************************/
-
-/*!*********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/isScrollParent.js ***!
-  \*********************************************************************/
-
-/*!*********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/isTableElement.js ***!
-  \*********************************************************************/
-
-/*!*********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/modifiers/eventListeners.js ***!
-  \*********************************************************************/
-
-/*!*********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/getFreshSideObject.js ***!
-  \*********************************************************************/
-
-/*!*********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/mergePaddingObject.js ***!
-  \*********************************************************************/
-
-/*!**********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/getClippingRect.js ***!
-  \**********************************************************************/
-
-/*!**********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/getDocumentRect.js ***!
-  \**********************************************************************/
-
-/*!**********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/getOffsetParent.js ***!
-  \**********************************************************************/
-
-/*!**********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/getScrollParent.js ***!
-  \**********************************************************************/
-
-/*!**********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/getViewportRect.js ***!
-  \**********************************************************************/
-
-/*!**********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/getWindowScroll.js ***!
-  \**********************************************************************/
-
-/*!**********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/modifiers/preventOverflow.js ***!
-  \**********************************************************************/
-
-/*!***********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/getCompositeRect.js ***!
-  \***********************************************************************/
-
-/*!***********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/getComputedStyle.js ***!
-  \***********************************************************************/
-
-/*!***********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/computeAutoPlacement.js ***!
-  \***********************************************************************/
-
-/*!***********************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/getOppositePlacement.js ***!
-  \***********************************************************************/
-
-/*!************************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/listScrollParents.js ***!
-  \************************************************************************/
-
-/*!*************************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/getDocumentElement.js ***!
-  \*************************************************************************/
-
-/*!**************************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/getWindowScrollBarX.js ***!
-  \**************************************************************************/
-
-/*!***************************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/getHTMLElementScroll.js ***!
-  \***************************************************************************/
-
-/*!***************************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/getMainAxisFromPlacement.js ***!
-  \***************************************************************************/
-
-/*!****************************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/dom-utils/getBoundingClientRect.js ***!
-  \****************************************************************************/
-
-/*!********************************************************************************!*\
-  !*** ./node_modules/@popperjs/core/lib/utils/getOppositeVariationPlacement.js ***!
-  \********************************************************************************/
+/*!**************************************************************************************************************!*\
+  !*** multi ./assets/js/app.js ./assets/js/blocs.js ./assets/js/jquery.touchSwipe.js ./assets/scss/main.scss ***!
+  \**************************************************************************************************************/
 
 /**!
  * @fileOverview Kickass library to create and place poppers near their reference elements.

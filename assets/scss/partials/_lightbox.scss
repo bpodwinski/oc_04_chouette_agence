@@ -1,0 +1,75 @@
+.close-lightbox {
+  transition: all 0.2s ease-in-out;
+  color: #fff;
+  font-size: 30px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 20;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  width: 40px;
+  height: 40px;
+  line-height: 0;
+  margin: 0 auto;
+  padding: 0 0 6px 0;
+  opacity: 0.6;
+}
+
+.next-lightbox {
+  right: 25px;
+}
+
+.prev-lightbox {
+  left: 25px;
+}
+
+.next-lightbox,
+.prev-lightbox {
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.9);
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.2s ease-in-out;
+  position: absolute;
+  top: 45%;
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 auto;
+  padding: 0;
+  opacity: 0.6;
+  text-align: center;
+}
+
+.close-lightbox:hover,
+.next-lightbox:hover,
+.prev-lightbox:hover {
+  opacity: 1;
+  color: #fff;
+}
+
+#lightbox-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.lightbox-caption {
+  padding-top: 1rem;
+  text-align: center;
+}
+
+#lightbox-modal {
+  display: flex;
+  align-items: center;
+}
+
+.modal-open .modal {
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.modal {
+  bottom: 0;
+  top: 0;
+}

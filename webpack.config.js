@@ -13,8 +13,16 @@ if (process.env.NODE_ENV === "production") {
 module.exports = {
   mode: "development",
   devtool: "source-map",
+  externals: {
+    $: "$",
+  },
   entry: {
-    main: ["./assets/js/app.js", "./assets/scss/main.scss"],
+    main: [
+      "./assets/js/app.js",
+      "./assets/js/blocs.js",
+      "./assets/js/jquery.touchSwipe.js",
+      "./assets/scss/main.scss",
+    ],
   },
   output: {
     path: path.resolve(__dirname, "./"),
@@ -28,6 +36,10 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: "assets/css/[name].css",
       chunkFilename: "assets/css/[id].css",
+    }),
+    new webpack.ProvidePlugin({
+      $: "jquery",
+      jQuery: "jquery",
     }),
   ],
   module: {

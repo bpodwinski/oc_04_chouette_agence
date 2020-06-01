@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>https://bpodwinski.github.io/04_chouette_agence/</loc>
+  <lastmod>2020-06-01T08:58:44+00:00</lastmod>
+  <priority>1.00</priority>
+</url>
+<url>
+  <loc>https://bpodwinski.github.io/04_chouette_agence/index.html</loc>
+  <lastmod>2020-06-01T08:58:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://bpodwinski.github.io/04_chouette_agence/contact.html</loc>
+  <lastmod>2020-06-01T08:58:44+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+
+</urlset>

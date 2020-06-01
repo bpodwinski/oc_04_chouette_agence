@@ -1,3 +1,29 @@
+.contact-header {
+  @include pattern;
+  position: relative;
+  background: $primary url(../img/dots-bg.png);
+  color: #fff;
+
+  .col-12 {
+    padding: 6rem 0;
+
+    h1,
+    p {
+      z-index: 1;
+      text-shadow: 0 3px 1px rgba($color: #000000, $alpha: 0.2);
+    }
+
+    p {
+      font-size: 1.25rem;
+    }
+
+    h2 {
+      margin-bottom: 2rem;
+      text-transform: uppercase;
+    }
+  }
+}
+
 .contact {
-  margin-top: 10rem;
+  margin-top: 3rem;
 }
